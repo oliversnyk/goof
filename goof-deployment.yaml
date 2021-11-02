@@ -24,7 +24,7 @@ kind: Deployment
 metadata:
   name: goof
 spec:
-  replicas: 6
+  replicas: 7
   selector:
    matchLabels:
     app: goof
