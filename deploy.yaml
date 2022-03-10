@@ -1,8 +1,7 @@
 name: Deploy to production
 
 on:
-  push:
-    branch: [master]
+  pull_request:
 
 jobs:
 
@@ -11,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-     - name: Check out codes
+     - name: Check out code
        uses: actions/checkout@v2
 
      - name: Configure AWS credentials
