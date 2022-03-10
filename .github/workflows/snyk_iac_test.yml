@@ -16,3 +16,4 @@ jobs:
           file: goof-deployment.yaml
           json: false
           sarif: false
+          command: monitor
