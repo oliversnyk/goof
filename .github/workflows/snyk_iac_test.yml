@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Run Snyk to check Kubernetes manifest file for issues
+      - name: Run Snyk to check Kubernetes manifest file for issue
         id: iactest
         uses: snyk/actions/iac@master
         continue-on-error: true
@@ -16,3 +16,4 @@ jobs:
           file: goof-deployment.yaml
           json: false
           sarif: false
+          command: monitor
