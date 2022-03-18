@@ -11,8 +11,6 @@ jobs:
         continue-on-error: true
         env:
            SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        with:
-           command: monitor
       - uses: snyk/actions/setup@master
       - name: Snyk Code Test
         run: snyk code test 
